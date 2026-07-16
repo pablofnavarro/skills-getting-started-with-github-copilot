@@ -8,12 +8,10 @@
       "name": "Launch Mergington WebApp",
       "type": "debugpy",
       "request": "launch",
-      "module": "uvicorn",
+      "module": "fastapi",
       "args": [
-        "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
+        "dev",
+        "src/app.py"
       ],
       "jinja": true
     }
